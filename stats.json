@@ -1,0 +1,570 @@
+{
+  "start_time": "2024-08-12T08:16:04.895978Z",
+  "end_time": "2024-08-12T08:21:04.523452Z",
+  "history": [
+    {
+      "time": "2024-08-12T08:16:09Z",
+      "user_count": 75,
+      "current_rps": 17.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 41.75,
+      "response_time_percentile_0.95": 120.0
+    },
+    {
+      "time": "2024-08-12T08:16:14Z",
+      "user_count": 150,
+      "current_rps": 34.625,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 33.66,
+      "response_time_percentile_0.95": 100.0
+    },
+    {
+      "time": "2024-08-12T08:16:19Z",
+      "user_count": 225,
+      "current_rps": 62.2,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 31.98,
+      "response_time_percentile_0.95": 100.0
+    },
+    {
+      "time": "2024-08-12T08:16:24Z",
+      "user_count": 300,
+      "current_rps": 102.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 31.86,
+      "response_time_percentile_0.95": 120.0
+    },
+    {
+      "time": "2024-08-12T08:16:29Z",
+      "user_count": 375,
+      "current_rps": 137.8,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 30.46,
+      "response_time_percentile_0.95": 110.0
+    },
+    {
+      "time": "2024-08-12T08:16:34Z",
+      "user_count": 450,
+      "current_rps": 172.2,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 28.82,
+      "response_time_percentile_0.95": 93.0
+    },
+    {
+      "time": "2024-08-12T08:16:39Z",
+      "user_count": 525,
+      "current_rps": 213.3,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 29.05,
+      "response_time_percentile_0.95": 110.0
+    },
+    {
+      "time": "2024-08-12T08:16:44Z",
+      "user_count": 600,
+      "current_rps": 248.4,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 28.15,
+      "response_time_percentile_0.95": 100.0
+    },
+    {
+      "time": "2024-08-12T08:16:49Z",
+      "user_count": 675,
+      "current_rps": 285.3,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 29.2,
+      "response_time_percentile_0.95": 120.0
+    },
+    {
+      "time": "2024-08-12T08:16:54Z",
+      "user_count": 750,
+      "current_rps": 324.6,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 29.35,
+      "response_time_percentile_0.95": 120.0
+    },
+    {
+      "time": "2024-08-12T08:16:59Z",
+      "user_count": 825,
+      "current_rps": 355.8,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 30.09,
+      "response_time_percentile_0.95": 120.0
+    },
+    {
+      "time": "2024-08-12T08:17:04Z",
+      "user_count": 900,
+      "current_rps": 392.7,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 29.97,
+      "response_time_percentile_0.95": 110.0
+    },
+    {
+      "time": "2024-08-12T08:17:09Z",
+      "user_count": 975,
+      "current_rps": 431.4,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 30.38,
+      "response_time_percentile_0.95": 110.0
+    },
+    {
+      "time": "2024-08-12T08:17:14Z",
+      "user_count": 1050,
+      "current_rps": 467.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 32.25,
+      "response_time_percentile_0.95": 130.0
+    },
+    {
+      "time": "2024-08-12T08:17:19Z",
+      "user_count": 1125,
+      "current_rps": 507.7,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 33.28,
+      "response_time_percentile_0.95": 120.0
+    },
+    {
+      "time": "2024-08-12T08:17:24Z",
+      "user_count": 1200,
+      "current_rps": 544.3,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 38.87,
+      "response_time_percentile_0.95": 190.0
+    },
+    {
+      "time": "2024-08-12T08:17:29Z",
+      "user_count": 1275,
+      "current_rps": 572.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 45.89,
+      "response_time_percentile_0.95": 240.0
+    },
+    {
+      "time": "2024-08-12T08:17:34Z",
+      "user_count": 1350,
+      "current_rps": 581.8,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 64.4,
+      "response_time_percentile_0.95": 550.0
+    },
+    {
+      "time": "2024-08-12T08:17:39Z",
+      "user_count": 1425,
+      "current_rps": 587.8,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 84.81,
+      "response_time_percentile_0.95": 940.0
+    },
+    {
+      "time": "2024-08-12T08:17:44Z",
+      "user_count": 1500,
+      "current_rps": 538.9,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 121.26,
+      "response_time_percentile_0.95": 1500.0
+    },
+    {
+      "time": "2024-08-12T08:17:49Z",
+      "user_count": 1575,
+      "current_rps": 575.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 171.61,
+      "response_time_percentile_0.95": 1700.0
+    },
+    {
+      "time": "2024-08-12T08:17:54Z",
+      "user_count": 1650,
+      "current_rps": 527.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 268.81,
+      "response_time_percentile_0.95": 2800.0
+    },
+    {
+      "time": "2024-08-12T08:17:59Z",
+      "user_count": 1725,
+      "current_rps": 430.4,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 348.7,
+      "response_time_percentile_0.95": 2700.0
+    },
+    {
+      "time": "2024-08-12T08:18:04Z",
+      "user_count": 1800,
+      "current_rps": 464.4,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 399.76,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:18:09Z",
+      "user_count": 1875,
+      "current_rps": 441.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 457.7,
+      "response_time_percentile_0.95": 2400.0
+    },
+    {
+      "time": "2024-08-12T08:18:14Z",
+      "user_count": 1950,
+      "current_rps": 432.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 516.33,
+      "response_time_percentile_0.95": 4400.0
+    },
+    {
+      "time": "2024-08-12T08:18:19Z",
+      "user_count": 2000,
+      "current_rps": 481.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 629.69,
+      "response_time_percentile_0.95": 5500.0
+    },
+    {
+      "time": "2024-08-12T08:18:24Z",
+      "user_count": 2000,
+      "current_rps": 525.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 710.37,
+      "response_time_percentile_0.95": 5400.0
+    },
+    {
+      "time": "2024-08-12T08:18:29Z",
+      "user_count": 2000,
+      "current_rps": 503.2,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 750.79,
+      "response_time_percentile_0.95": 2500.0
+    },
+    {
+      "time": "2024-08-12T08:18:35Z",
+      "user_count": 2000,
+      "current_rps": 481.5,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 782.77,
+      "response_time_percentile_0.95": 2500.0
+    },
+    {
+      "time": "2024-08-12T08:18:40Z",
+      "user_count": 2000,
+      "current_rps": 479.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 817.83,
+      "response_time_percentile_0.95": 2500.0
+    },
+    {
+      "time": "2024-08-12T08:18:45Z",
+      "user_count": 2000,
+      "current_rps": 651.6,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 844.25,
+      "response_time_percentile_0.95": 2500.0
+    },
+    {
+      "time": "2024-08-12T08:18:50Z",
+      "user_count": 2000,
+      "current_rps": 527.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 869.59,
+      "response_time_percentile_0.95": 2200.0
+    },
+    {
+      "time": "2024-08-12T08:18:55Z",
+      "user_count": 2000,
+      "current_rps": 520.2,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 910.14,
+      "response_time_percentile_0.95": 2200.0
+    },
+    {
+      "time": "2024-08-12T08:19:00Z",
+      "user_count": 2000,
+      "current_rps": 488.5,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 927.2,
+      "response_time_percentile_0.95": 2200.0
+    },
+    {
+      "time": "2024-08-12T08:19:05Z",
+      "user_count": 2000,
+      "current_rps": 487.8,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 948.32,
+      "response_time_percentile_0.95": 2400.0
+    },
+    {
+      "time": "2024-08-12T08:19:10Z",
+      "user_count": 2000,
+      "current_rps": 595.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 977.79,
+      "response_time_percentile_0.95": 2800.0
+    },
+    {
+      "time": "2024-08-12T08:19:15Z",
+      "user_count": 2000,
+      "current_rps": 519.9,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 995.44,
+      "response_time_percentile_0.95": 2800.0
+    },
+    {
+      "time": "2024-08-12T08:19:20Z",
+      "user_count": 2000,
+      "current_rps": 554.6,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1013.75,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:19:25Z",
+      "user_count": 2000,
+      "current_rps": 476.6,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1048.13,
+      "response_time_percentile_0.95": 2400.0
+    },
+    {
+      "time": "2024-08-12T08:19:30Z",
+      "user_count": 2000,
+      "current_rps": 470.6,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1057.01,
+      "response_time_percentile_0.95": 2200.0
+    },
+    {
+      "time": "2024-08-12T08:19:35Z",
+      "user_count": 2000,
+      "current_rps": 479.7,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1070.02,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:19:40Z",
+      "user_count": 2000,
+      "current_rps": 521.6,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1102.11,
+      "response_time_percentile_0.95": 3000.0
+    },
+    {
+      "time": "2024-08-12T08:19:45Z",
+      "user_count": 2000,
+      "current_rps": 470.3,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1123.7,
+      "response_time_percentile_0.95": 3000.0
+    },
+    {
+      "time": "2024-08-12T08:19:50Z",
+      "user_count": 2000,
+      "current_rps": 526.7,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1150.79,
+      "response_time_percentile_0.95": 2800.0
+    },
+    {
+      "time": "2024-08-12T08:19:55Z",
+      "user_count": 2000,
+      "current_rps": 554.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1176.4,
+      "response_time_percentile_0.95": 3600.0
+    },
+    {
+      "time": "2024-08-12T08:20:00Z",
+      "user_count": 2000,
+      "current_rps": 462.9,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1198.49,
+      "response_time_percentile_0.95": 4000.0
+    },
+    {
+      "time": "2024-08-12T08:20:05Z",
+      "user_count": 2000,
+      "current_rps": 421.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1222.61,
+      "response_time_percentile_0.95": 4800.0
+    },
+    {
+      "time": "2024-08-12T08:20:10Z",
+      "user_count": 2000,
+      "current_rps": 489.5,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1241.9,
+      "response_time_percentile_0.95": 2700.0
+    },
+    {
+      "time": "2024-08-12T08:20:15Z",
+      "user_count": 2000,
+      "current_rps": 471.0,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1258.62,
+      "response_time_percentile_0.95": 2500.0
+    },
+    {
+      "time": "2024-08-12T08:20:20Z",
+      "user_count": 2000,
+      "current_rps": 462.2,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1265.05,
+      "response_time_percentile_0.95": 2400.0
+    },
+    {
+      "time": "2024-08-12T08:20:25Z",
+      "user_count": 2000,
+      "current_rps": 603.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1270.67,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:20:30Z",
+      "user_count": 2000,
+      "current_rps": 656.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1278.02,
+      "response_time_percentile_0.95": 2500.0
+    },
+    {
+      "time": "2024-08-12T08:20:35Z",
+      "user_count": 2000,
+      "current_rps": 568.2,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1281.26,
+      "response_time_percentile_0.95": 2500.0
+    },
+    {
+      "time": "2024-08-12T08:20:40Z",
+      "user_count": 2000,
+      "current_rps": 505.5,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1292.06,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:20:45Z",
+      "user_count": 2000,
+      "current_rps": 469.1,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1295.2,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:20:50Z",
+      "user_count": 2000,
+      "current_rps": 626.4,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1298.02,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:20:55Z",
+      "user_count": 2000,
+      "current_rps": 682.6,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1302.67,
+      "response_time_percentile_0.95": 2300.0
+    },
+    {
+      "time": "2024-08-12T08:21:00Z",
+      "user_count": 2000,
+      "current_rps": 560.5,
+      "current_fail_per_sec": 0.0,
+      "total_avg_response_time": 1308.05,
+      "response_time_percentile_0.95": 2400.0
+    }
+  ],
+  "ratio": {
+    "total": {
+      "ScenarioUser": {
+        "ratio": 1.0,
+        "tasks": {
+          "UserScenarioTaskSet": {
+            "ratio": 0.16666666666666666,
+            "tasks": {
+              "get_plata_subscription_info": {
+                "ratio": 0.16666666666666666
+              }
+            }
+          },
+          "UsersScenarioTaskSet": {
+            "ratio": 0.16666666666666666,
+            "tasks": {
+              "get_installments_summary": {
+                "ratio": 0.16666666666666666
+              }
+            }
+          },
+          "AccountScenarioTaskSet": {
+            "ratio": 0.5,
+            "tasks": {
+              "get_accounts": {
+                "ratio": 0.15625
+              },
+              "get_cashback_info": {
+                "ratio": 0.125
+              },
+              "get_operations_summary": {
+                "ratio": 0.21875
+              }
+            }
+          },
+          "AccountsScenarioTaskSet": {
+            "ratio": 0.16666666666666666,
+            "tasks": {
+              "get_client_data_for_msm": {
+                "ratio": 0.16666666666666666
+              }
+            }
+          }
+        }
+      }
+    },
+    "per_class": {
+      "UserScenarioTaskSet": {
+        "ratio": 1.0,
+        "tasks": {
+          "UserScenarioTaskSet": {
+            "ratio": 0.16666666666666666,
+            "tasks": {
+              "get_plata_subscription_info": {
+                "ratio": 1.0
+              }
+            }
+          },
+          "UsersScenarioTaskSet": {
+            "ratio": 0.16666666666666666,
+            "tasks": {
+              "get_installments_summary": {
+                "ratio": 1.0
+              }
+            }
+          },
+          "AccountScenarioTaskSet": {
+            "ratio": 0.5,
+            "tasks": {
+              "get_accounts": {
+                "ratio": 0.3125
+              },
+              "get_cashback_info": {
+                "ratio": 0.25
+              },
+              "get_operations_summary": {
+                "ratio": 0.4375
+              }
+            }
+          },
+          "AccountsScenarioTaskSet": {
+            "ratio": 0.16666666666666666,
+            "tasks": {
+              "get_client_data_for_msm": {
+                "ratio": 1.0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

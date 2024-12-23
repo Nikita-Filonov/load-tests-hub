@@ -5,8 +5,8 @@ from typing import Optional, Any
 
 from httpx import AsyncClient, Response, URL, Headers, QueryParams, Timeout
 
-from config import HTTPClientConfig
 from clients.http.event_hooks.logger_event_hook import HTTPLoggerEventHook
+from config import HTTPClientConfig
 
 URLType = URL | str
 
@@ -64,3 +64,6 @@ class HTTPClient(ABC):
 
     async def post(self, url: URLType, json: Optional[Any] = None) -> Response:
         return await self.send_with_retries("POST", url=url, json=json)
+
+    async def patch(self, url: URLType, json: Optional[Any] = None) -> Response:
+        return await self.send_with_retries("PATCH", url=url, json=json)

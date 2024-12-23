@@ -1,10 +1,11 @@
 from config import settings
 from logger import get_logger
+from reports.metrics.schema.exception_results import CreateExceptionResultsRequest
 from reports.metrics.schema.history_results import CreateHistoryResultsRequest
 from reports.metrics.schema.load_test_results import CreateLoadTestResultRequest, CreateLoadTestResultResponse
 from reports.metrics.schema.method_results import CreateMethodResultsRequest
 from reports.metrics.schema.ratio_results import CreateRatioResultRequest
-from reports.metrics.schema.scenarios import CreateScenarioRequest
+from reports.metrics.schema.scenarios import UpdateScenarioRequest
 from clients.http.client import HTTPClient
 
 
@@ -35,9 +36,15 @@ class LoadTestingMetricsHTTPClient(HTTPClient):
             json=request.model_dump(by_alias=True, mode='json')
         )
 
-    async def create_scenario(self, request: CreateScenarioRequest):
+    async def create_exception_results(self, request: CreateExceptionResultsRequest):
         await self.post(
-            '/api/v1/scenarios',
+            '/api/v1/exception-results',
+            json=request.model_dump(by_alias=True, mode='json')
+        )
+
+    async def update_scenario(self, scenario_id: int, request: UpdateScenarioRequest):
+        await self.patch(
+            f'/api/v1/scenarios/{scenario_id}',
             json=request.model_dump(by_alias=True, mode='json')
         )
 

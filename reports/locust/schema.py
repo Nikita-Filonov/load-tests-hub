@@ -17,6 +17,7 @@ class LocustSummary(BaseModel):
     max_response_time: float
     min_response_time: float
     total_response_time: float
+    total_content_length: int
     last_request_timestamp: float
 
     @property
@@ -36,6 +37,10 @@ class LocustSummary(BaseModel):
     @property
     def average_response_time(self) -> float:
         return self.total_response_time / self.num_requests
+
+    @property
+    def average_content_length(self) -> float:
+        return self.total_content_length / self.num_requests
 
 
 class RootLocustSummary(RootModel):
@@ -83,13 +88,20 @@ class LocustHistory(BaseModel):
     response_time_percentile_95: float = Field(alias="response_time_percentile_0.95")
 
 
+class LocustException(BaseModel):
+    count: int
+    message: str = Field(alias="msg")
+    traceback: str
+
+
 class LocustStatsRatioDict(TypedDict):
     total: dict
     per_class: dict
 
 
 class LocustStats(BaseModel):
-    start_time: datetime
-    end_time: datetime
-    history: list[LocustHistory]
     ratio: LocustStatsRatioDict
+    end_time: datetime
+    start_time: datetime
+    history: list[LocustHistory]
+    exceptions: list[LocustException]

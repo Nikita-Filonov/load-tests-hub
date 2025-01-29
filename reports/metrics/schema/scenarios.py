@@ -15,3 +15,5 @@ class UpdateScenarioRequest(BaseModel):
     version: str
     ratio_total: list[RatioResult] = Field(alias="ratioTotal")
     ratio_per_class: list[RatioResult] = Field(alias="ratioPerClass")
+    number_of_users: int = Field(alias="numberOfUsers")
+    runtime_duration: str = Field(alias="runtimeDuration")

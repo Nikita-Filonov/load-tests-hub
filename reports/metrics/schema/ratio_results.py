@@ -1,5 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field
 
+from reports.locust.schema.ratios import TaskSet
+
 
 class RatioResult(BaseModel):
     name: str
@@ -7,14 +9,17 @@ class RatioResult(BaseModel):
     tasks: list['RatioResult']
 
     @classmethod
-    def from_ratio_dict(cls, ratio: dict) -> list['RatioResult']:
+    def from_locust_ratio(cls, ratio: dict[str, TaskSet] | None) -> list['RatioResult']:
+        if not ratio:
+            return []
+
         return [
             RatioResult(
                 name=key,
-                ratio=value.get('ratio', 0.0),
-                tasks=cls.from_ratio_dict(value.get('tasks', {}))
+                ratio=task_set.ratio,
+                tasks=cls.from_locust_ratio(task_set.tasks)
             )
-            for key, value in ratio.items()
+            for key, task_set in ratio.items()
         ]
 
 

@@ -1,0 +1,50 @@
+{
+    "per_class": {
+        "UserDetailsScenarioUser": {
+            "ratio": 1.0,
+            "tasks": {
+                "UserDetailsScenarioTaskSet": {
+                    "ratio": 1.0,
+                    "tasks": {
+                        "get_users": {
+                            "ratio": 0.16666666666666666
+                        },
+                        "get_user_statistics": {
+                            "ratio": 0.16666666666666666
+                        },
+                        "get_user_permissions": {
+                            "ratio": 0.16666666666666666
+                        },
+                        "get_user_details": {
+                            "ratio": 0.5
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "total": {
+        "UserDetailsScenarioUser": {
+            "ratio": 1.0,
+            "tasks": {
+                "UserDetailsScenarioTaskSet": {
+                    "ratio": 1.0,
+                    "tasks": {
+                        "get_users": {
+                            "ratio": 0.16666666666666666
+                        },
+                        "get_user_statistics": {
+                            "ratio": 0.16666666666666666
+                        },
+                        "get_user_permissions": {
+                            "ratio": 0.16666666666666666
+                        },
+                        "get_user_details": {
+                            "ratio": 0.5
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

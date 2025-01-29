@@ -6,7 +6,7 @@ from typing import Optional, Any
 from httpx import AsyncClient, Response, URL, Headers, QueryParams, Timeout
 
 from clients.http.event_hooks.logger_event_hook import HTTPLoggerEventHook
-from config import HTTPClientConfig
+from settings import HTTPClientConfig
 
 URLType = URL | str
 

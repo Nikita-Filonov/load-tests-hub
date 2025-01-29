@@ -1,51 +1,21 @@
-from datetime import datetime, timezone
-
-from locust.env import Environment
-from locust.runners import STATE_STOPPED, STATE_STOPPING, MasterRunner
-from locust.user.inspectuser import get_ratio
-
-from config import settings
-from reports.locust.schema import RootLocustSummary, LocustStats, LocustStatsRatioDict
+from reports.locust.schema.exceptions import LocustExceptionsList
+from reports.locust.schema.ratios import LocustRatios
+from reports.locust.schema.report import LocustReport
+from reports.locust.schema.stats import LocustStatsList, LocustStatsAggregatedList
+from reports.locust.schema.stats_history import LocustStatsHistoryList, LocustStatsHistoryAggregatedList
+from settings import settings
 
 
-def get_locust_report_stats() -> LocustStats:
-    summary = settings.json_stats_report_file.read_text()
-    return LocustStats.model_validate_json(summary)
+def get_locust_report() -> LocustReport:
+    return LocustReport(
+        stats=LocustStatsList.from_csv(settings.reports.csv_locust_stats_file),
+        stats_aggregated=LocustStatsAggregatedList.from_csv(settings.reports.csv_locust_stats_file),
 
+        stats_history=LocustStatsHistoryList.from_csv(settings.reports.csv_locust_stats_history_file),
+        stats_history_aggregated=LocustStatsHistoryAggregatedList.from_csv(
+            settings.reports.csv_locust_stats_history_file
+        ),
 
-def dump_locust_report_stats(environment: Environment) -> LocustStats:
-    stats = environment.stats
-
-    start_time = datetime.fromtimestamp(stats.start_time, timezone.utc)
-    end_time = start_time
-
-    if end_ts := stats.last_request_timestamp:
-        end_time = datetime.fromtimestamp(end_ts, timezone.utc)
-
-    user_spawned = (
-        environment.runner.reported_user_classes_count
-        if isinstance(environment.runner, MasterRunner)
-        else environment.runner.user_classes_count
+        ratios=LocustRatios.from_json(settings.reports.json_locust_ratio_file),
+        exceptions=LocustExceptionsList.from_csv(settings.reports.csv_locust_exceptions_file),
     )
-
-    if environment.runner.state in [STATE_STOPPED, STATE_STOPPING]:
-        user_spawned = environment.runner.final_user_classes_count
-
-    stats = LocustStats(
-        start_time=start_time,
-        end_time=end_time,
-        history=stats.history,
-        ratio=LocustStatsRatioDict(
-            total=get_ratio(environment.user_classes, user_spawned, True),
-            per_class=get_ratio(environment.user_classes, user_spawned, False)
-        )
-    )
-
-    settings.json_stats_report_file.write_text(data=stats.model_dump_json(by_alias=True))
-
-    return stats
-
-
-def get_locust_report_summary() -> RootLocustSummary:
-    summary = settings.json_summary_report_file.read_text()
-    return RootLocustSummary.model_validate_json(summary)

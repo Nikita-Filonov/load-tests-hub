@@ -1,12 +1,13 @@
-from config import settings
+from clients.http.client import HTTPClient
 from logger import get_logger
 from reports.metrics.schema.exception_results import CreateExceptionResultsRequest
-from reports.metrics.schema.history_results import CreateHistoryResultsRequest
 from reports.metrics.schema.load_test_results import CreateLoadTestResultRequest, CreateLoadTestResultResponse
-from reports.metrics.schema.method_results import CreateMethodResultsRequest
+from reports.metrics.schema.method_results import CreateMethodResultsRequest, CreateMethodResultsResponse
 from reports.metrics.schema.ratio_results import CreateRatioResultRequest
+from reports.metrics.schema.results_history.load_test_results_history import CreateLoadTestResultsHistoryRequest
+from reports.metrics.schema.results_history.method_results_history import CreateMethodResultsHistoryRequest
 from reports.metrics.schema.scenarios import UpdateScenarioRequest
-from clients.http.client import HTTPClient
+from settings import settings
 
 
 class LoadTestingMetricsHTTPClient(HTTPClient):
@@ -18,15 +19,22 @@ class LoadTestingMetricsHTTPClient(HTTPClient):
         )
         return CreateLoadTestResultResponse(**response.json())
 
-    async def create_method_results(self, request: CreateMethodResultsRequest):
-        await self.post(
+    async def create_method_results(self, request: CreateMethodResultsRequest) -> CreateMethodResultsResponse:
+        response = await self.post(
             '/api/v1/method-results',
             json=request.model_dump(by_alias=True, mode='json')
         )
+        return CreateMethodResultsResponse(**response.json())
 
-    async def create_history_results(self, request: CreateHistoryResultsRequest):
+    async def create_method_results_history(self, request: CreateMethodResultsHistoryRequest):
         await self.post(
-            '/api/v1/history-results',
+            '/api/v1/method-results-history',
+            json=request.model_dump(by_alias=True, mode='json')
+        )
+
+    async def create_load_test_results_history(self, request: CreateLoadTestResultsHistoryRequest):
+        await self.post(
+            '/api/v1/load-test-results-history',
             json=request.model_dump(by_alias=True, mode='json')
         )
 
